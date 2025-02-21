@@ -1,0 +1,12 @@
+models:
+  - name: dim_creditcard
+    description: Cartões de crédito utilizados nas vendas.
+    columns:
+      - name: PK_CREDITCARD
+        description: Primary key do cartão
+        data_tests:
+          - unique
+          - not_null 
+
+      - name: TYPE_CREDITCARD
+        description: Tipo de cartão
