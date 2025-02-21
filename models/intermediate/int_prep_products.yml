@@ -1,0 +1,18 @@
+models:
+  - name: int_prep_products
+    description: Modelo que enriquece os dados de produto com categoria e subcategoria.
+    columns:
+      - name: PK_PRODUCT
+        description: Primary key da tabela
+        data_tests:
+          - unique
+          - not_null
+
+      - name: NAME_PRODUCT
+        description: Descrição do produto
+
+      - name: NAME_PRODUCTCATEGORY
+        description: Descrição da categoria do produto
+
+      - name: NAME_PRODUCTSUBCATEGORY
+        description: Descrição da subcategoria do produto
