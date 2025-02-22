@@ -61,7 +61,19 @@ with
                 else 'Other' 
             end as payment
           ,  online_orderflag
+          , cast(order_date as date) as order_date_date
         from join_sales
+    ),
+
+    add_date as (
+        select
+            sm.*,
+            dd.sk_date 
+        from sales_metrics sm
+        left join {{ ref('dim_dates') }} dd on sm.order_date_date = dd.date_day 
     )
 
-select * from sales_metrics
+select * from add_date
+          
+
+    
