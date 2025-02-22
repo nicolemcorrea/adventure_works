@@ -1,0 +1,68 @@
+models:
+  - name: int_prep_salesmetrics
+    description: Tabela intermediária para configurar a fato vendas
+    columns:
+      - name: SK_SALESORDER
+        description: Surrogate key para pedido
+        data_tests:
+          - not_null
+
+      - name: PK_SALESORDER
+        description: Primary key para pedido
+
+      - name: FK_CUSTOMER
+        description: Foreign key para consumidor
+
+      - name: FK_ADDRESS
+        description: Foreign key para localização
+
+      - name: FK_CREDITCARD
+        description: Foreign key para cartão
+
+      - name: FK_PRODUCT
+        description: Foreign key para produto
+
+      - name: ORDER_DATE
+        description: Data do pedido
+
+      - name: ORDER_QTY
+        description: Quantidade de produtos
+
+      - name: UNIT_PRICE
+        description: Preço unitário
+
+      - name: GROSS_PRICE
+        description: Valor bruto por produto
+
+      - name: NET_PRICE
+        description: Valor líquido por produto
+
+      - name: HAS_DISCOUNT
+        description: Flag de desconto 
+
+      - name: DISCOUNT_AMOUNT
+        description: Desconto do total de produtos 
+
+      - name: DISCOUNT_UNIT_AMOUNT
+        description: Desconto por unidade 
+
+      - name: SALESORDER_SUBTOTAL
+        description: Preço total (sem incluir frete e impostos)
+
+      - name: SALESORDER_TAX
+        description: Valor dos impostos
+
+      - name: SALESORDER_FREIGHT
+        description: Valor do frete
+
+      - name: PRORATED_FREIGHT
+        description: Valor do frete rateado
+
+      - name: SALESORDER_TOTALDUE
+        description: Preço total incluindo impostos e frete
+
+      - name: PAYMENT
+        description: Tipo de pagamento (cartão ou outros)
+
+      - name: ONLINE_ORDERFLAG
+        description: Flag indicando se o pedido foi feito ou não online 

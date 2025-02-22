@@ -2,14 +2,11 @@ models:
   - name: dim_salesreason
     description: Modelo que enriquece os dados de motivos de venda com nome e tipo de motivos.
     columns:
-      - name: SK_SALESREASON
-        description: Surrogate key da tabela
+      - name: PK_SALESORDER
+        description: Primary key do pedido de venda
         data_tests:
           - unique
           - not_null
-
-      - name: PK_SALESORDER
-        description: Primary key do pedido de venda
 
       - name: FK_SALESREASON
         description: Foreign key do motivo de venda
