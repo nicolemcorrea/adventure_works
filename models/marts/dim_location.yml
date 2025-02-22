@@ -1,0 +1,27 @@
+models:
+  - name: dim_location
+    description: Modelo que enriquece os dados de território com cidade, estado e país.
+    columns:
+      - name: PK_ADDRESS
+        description: Primary key da tabela
+        data_tests:
+          - unique
+          - not_null
+
+      - name: NAME_COUNTRY
+        description: Nome do país
+
+      - name: NAME_STATE
+        description: Nome do estado
+
+      - name: NAME_CITY
+        description: Nome da cidade
+
+      - name: ADDRESS_STREET
+        description: Nome da rua
+
+      - name: POSTAL_CODE
+        description: Código postal
+
+      - name: SPATIAL_LOCATION
+        description: Localização espacial
