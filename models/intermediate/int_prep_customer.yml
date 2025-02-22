@@ -1,0 +1,18 @@
+models:
+  - name: int_prep_customer
+    description: Tabela intermediária para configurar a dimensão de consumidores
+    columns:
+      - name: PK_CUSTOMER
+        description: Primary key para consumidores
+        data_tests:
+          - unique
+          - not_null
+
+      - name: NAME
+        description: Nome do consumidor
+
+      - name: NAME_PERSONTYPE
+        description: Employee (Non-Sales), Individual Customer', General Contact, Sales Person, Store Contact, Vendor Contact
+
+      - name: STORE
+        description: Nome da loja utilizada pelo consumidor 
