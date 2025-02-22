@@ -35,7 +35,7 @@ with
         select
         --foi feito um hash para a criação da surrogate key, pois pk_salesorder não é único e não há outra coluna que, combinada com ele, garanta a unicidade
           coalesce(md5(cast(pk_salesorder as TEXT) || '-' || cast(pk_salesorderdetail as TEXT)), 'default_value') as sk_salesorder
-          , pk_salesorder
+          , pk_salesorder as fk_salesorder
           , fk_customer
           , fk_address
           , fk_creditcard
