@@ -29,5 +29,4 @@ with
         from promotion_reasons
         where orders in (1)
     )
-select *
-from int_salesreason
+select * from int_salesreason
