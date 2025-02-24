@@ -6,9 +6,12 @@ models:
         description: Surrogate key para pedido
         data_tests:
           - not_null
+      
+      - name: FK_DATE
+        description: Foreign key para data
 
-      - name: PK_SALESORDER
-        description: Primary key para pedido
+      - name: FK_SALESORDER
+        description: Foreign key para pedido
 
       - name: FK_CUSTOMER
         description: Foreign key para consumidor

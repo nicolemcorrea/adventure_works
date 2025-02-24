@@ -2,7 +2,7 @@ models:
   - name: dim_date
     description: Tabela contendo informações de datas, criada através do pacote calogica/dbt_date
     columns:
-      - name: sk_date
+      - name: SK_DATE
         description: Surrogate key para data 
         tests:  
           - unique
