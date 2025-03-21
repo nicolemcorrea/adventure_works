@@ -1,4 +1,6 @@
-Welcome to your new dbt project!
+## Adventure Works ##
+
+Repositório utilizado no desafio para a obtenção da certificação de Analytics Engineer by Indicium. 
 
 ### Using the starter project
 
